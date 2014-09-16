@@ -1,0 +1,16 @@
+git init
+mkdir source
+cd source
+touch main.c
+cd ..
+git add source
+git commit -a
+git remote add origin https://github.com/TheniL/quicksort.git
+git push -u origin master
+
+
+#now edit sorce files...
+git add source  # to include new files
+git commit -a
+git push
+
