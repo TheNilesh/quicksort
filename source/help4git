@@ -1,3 +1,4 @@
+#create repo
 git init
 mkdir source
 cd source
@@ -9,8 +10,25 @@ git remote add origin https://github.com/TheniL/quicksort.git
 git push -u origin master
 
 
-#now edit sorce files...
+#now edit source files...
 git add source  # to include new files
 git commit -a
 git push
 
+
+#Ifd you made mistake how to go back?
+git log
+#copy hash of version where u want to go back
+git reset --hard <hash>
+
+
+#Update local repo with that one online....
+#useful if u accidently deleted or used git reset or want project on diff host
+git pull
+
+
+#if you want to download project on diff host for modification
+git clone https://github.com/TheniL/quicksort.git
+#Folder named quicksort will be created..
+#modify files
+git push
