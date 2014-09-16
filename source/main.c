@@ -5,7 +5,7 @@ int main()
 int i,j,n,temp;
 int arr[7];
 n=7;
-printf("enter array");
+printf("Enter array:::Cloned on diff location");
 for(i=0;i<n;i++)
 	scanf("%d",&arr[i]);
 
