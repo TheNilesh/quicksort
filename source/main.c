@@ -5,22 +5,23 @@ int main()
 int i,j,n,temp;
 int arr[7];
 n=7;
-
-for(i<0;i<n;i++)
-	printf("%d  ", arr[i]);
+printf("enter array");
+for(i=0;i<n;i++)
+	scanf("%d",&arr[i]);
 
 printf("Sorting program");
 for(i=0;i<n;i++)
-	for(j=i;j<n-1;j++)
-		if(arr[j]<arr[j+1])
+	for(j=0;j<n-i-1;j++)
+		if(arr[j]>arr[j+1])
 		{
 		 temp=arr[j];
 		 arr[j]=arr[j+1];
 		 arr[j+1]=temp;
 		}
 
-for(i<0;i<n;i++)
-	printf("%d  ", arr[i]);
+printf("Sorted Array = ");
+for(i=0;i<n;i++)
+	printf("%5d",arr[i]);
 			
 return 0;
 }
